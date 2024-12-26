@@ -1,15 +1,15 @@
 import React from 'react'
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import { skills, experiences } from '../constants'
+import { experiences } from '../constants'
 
 const About = () => {
   return (
-    <section className='max-container'>
+    <section className='max-container mt-20'>
       <h1 className='head-text'>
-        Hello, I'm <span className='blue-gradient_text font-semibold drop-shadow'>Eve Nicole</span>
+        <span className='text-gray_gradient font-semibold drop-shadow'>Overview</span>
       </h1>
-      <div className='mt-5 flex flex-col gap-3 text-slate-600'>
+      <div className='mt-5 flex flex-col gap-3 text-white'>
         <p>
           I'm a skilled software developer with experience in Python and
           JavaScript, and expertise in frameworks like React, Node.js, and
@@ -18,7 +18,7 @@ const About = () => {
           real-world problems. Let's work together to bring your ideas to life!        
         </p>
       </div>
-      <div className='py-10 flex flex-col'>
+      {/* <div className='py-10 flex flex-col'>
         <h3 className='subhead-text'>My SKills</h3>
 
         <div className='mt-16 flex flex-wrap gap-12'>
@@ -34,13 +34,13 @@ const About = () => {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
 
-      </div>
+      {/* </div> */}
 
       <div>
-        <h3 className='subhead-text'>Work Experience</h3>
-        <div className='mt-5 flex flex-col gap-3 text-slate-600'>
+        <h2 className='font-semibold text-gray_gradient mt-10'>Work Experience</h2>
+        <div className='mt-5 flex flex-col gap-3 text-white'>
           <p>
             Throughout my career, I've collaborated with diverse companies, enhancing my skills and working alongside talented individuals. Here's a quick overview: 
           </p>
@@ -78,7 +78,7 @@ const About = () => {
                 </div>
                 <ul className='my-5 list-disc ml-5 space-y-2'>
                   {experience.points.map((point, index) => (
-                    <li key={`experience-point-${index}`} className='text-black-500/50 font-normal pl-1 text-sm'>
+                    <li key={`experience-point-${index}`} className='text-black-300 font-normal pl-1 text-sm'>
                       {point}
                     </li>
                   ))}
