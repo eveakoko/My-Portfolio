@@ -9,6 +9,8 @@ import Target from '../components/Target'
 import ReactLogo from '../components/ReactLogo'
 import Python from '../components/Python'
 import Rings from '../components/Rings'
+import LandingCamera from '../components/LandingCamera'
+import Button from '../components/Button'
 
 const LandingPage = () => {
 
@@ -37,11 +39,13 @@ const LandingPage = () => {
                         position={[0, 0, 20]}
                     />
 
-                    <Room 
-                        position={sizes.deskPosition}
-                        rotation={[0, -Math.PI, 0]}
-                        scale={sizes.deskScale}
-                    />
+                    <LandingCamera isMobile={isMobile}>
+                        <Room 
+                            position={sizes.deskPosition}
+                            rotation={[0, -Math.PI, 0]}
+                            scale={sizes.deskScale}
+                        />
+                    </LandingCamera>
 
                     <group>
                         <Target position={sizes.targetPosition} />
@@ -54,6 +58,16 @@ const LandingPage = () => {
                     <directionalLight position={[10, 10, 10]} intensity={0.5} />
                 </Suspense>
             </Canvas>
+        </div>
+
+        <div className='absolute bottom-7 left-0 right-0 w-full z-10 c-space'>
+            <a href="#contact" className='w-fit'>
+                <Button 
+                    name='Get in touch'
+                    isBeam
+                    containerClass='sm:w-fit w-full sm min-w-96'
+                />
+            </a>
         </div>
     </section>
   )
