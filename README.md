@@ -1,8 +1,31 @@
-# React + Vite
+# Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+1. Cloning the Repository
+```bash
+git clone https://github.com/eveakoko/My-Portfolio.git
+cd My-Portfolio
+```
 
-Currently, two official plugins are available:
+2. Installation
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Install the project dependencies using npm:
+```bash
+npm install
+```
+
+3. Set Up Environment Variables
+
+Create a new file named .env in the root of your project and add the following content:
+
+```bash
+REACT_APP_EMAILJS_USERID=your_emailjs_user_id
+REACT_APP_EMAILJS_TEMPLATEID=your_emailjs_template_id
+REACT_APP_EMAILJS_RECEIVERID=your_emailjs_receiver_id
+```
+
+Replace the placeholder values with your actual EmailJS credentials. You can obtain these credentials by signing up on the EmailJS website.
+
+4. Running the Project
+```bash
+npm run dev
+```
