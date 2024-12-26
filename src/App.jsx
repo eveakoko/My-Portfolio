@@ -1,8 +1,15 @@
 import React from 'react'
+import Navbar from './sections/Navbar'
+import LandingPage from './sections/LandingPage'
+import About from './sections/About'
 
 const App = () => {
   return (
-    <div>App</div>
+    <main className='max-w-7xl mx-auto'>
+      <Navbar />
+      <LandingPage />
+      <About />
+    </main>
   )
 }
 
