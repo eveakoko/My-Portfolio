@@ -11,6 +11,9 @@ const Footer = () => {
             <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" className="social-icon">
                 <img src="/assets/github.svg" alt="github" className="w-1/2 h-1/2 cursor-pointer" />
             </a>
+            <a href="https://twitter.com/your-username" target="_blank" rel="noopener noreferrer" className="social-icon">
+                <img src="/assets/twitter.svg" alt="twitter" className="w-1/2 h-1/2 cursor-pointer" />
+            </a>
             <a href="https://linkedin.com/your-username" target="_blank" rel="noopener noreferrer" className="social-icon">
                 <img src="/assets/linkedin.svg" alt="instagram" className="w-1/2 h-1/2 cursor-pointer" />
             </a>

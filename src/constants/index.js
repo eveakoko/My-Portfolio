@@ -222,32 +222,47 @@ export const navLinks = [
     };
   };
   
-  export const workExperiences = [
+  export const experiences = [
     {
-      id: 1,
-      name: 'Framer',
-      pos: 'Lead Web Developer',
-      duration: '2022 - Present',
-      title: "Framer serves as my go-to tool for creating interactive prototypes. I use it to bring designs to  life, allowing stakeholders to experience the user flow and interactions before development.",
-      icon: '/assets/framer.svg',
-      animation: 'victory',
+      title: "ICT Support Assistant",
+      company_name: "KMTC Mathari",
+      icon: '/assets/kmtc.png',
+      iconBg: "#A05252",
+      date: "February 2024 - May 2024",
+      points: [
+          "Troubleshot computer hardware and software issues, ensuring minimal downtime.",
+          "Diagnosed and resolved campus LAN connectivity problems.",
+          "Assisted with the installation and configuration of software across campus workstations.",
+          "Set up and maintained computer workstations, including hardware assembly and configuration.",
+          "Installed and configured the core campus Enterprise Resource Package (ERP) system on new computers, ensuring seamless integration into existing infrastructure.",
+      ],
     },
-    {
-      id: 2,
-      name: 'Figma',
-      pos: 'Web Developer',
-      duration: '2020 - 2022',
-      title: "Figma is my collaborative design platform of choice. I utilize it to work seamlessly with team members and clients, facilitating real-time feedback and design iterations. Its cloud-based.",
-      icon: '/assets/figma.svg',
-      animation: 'clapping',
-    },
-    {
-      id: 3,
-      name: 'Notion',
-      pos: 'Junior Web Developer',
-      duration: '2019 - 2020',
-      title: "Notion helps me keep my projects organized. I use it for project management, task tracking, and as a central hub for documentation, ensuring that everything from design notes to.",
-      icon: '/assets/notion.svg',
-      animation: 'salute',
-    },
+    // {
+    //   title: "ICT Support Assistant",
+    //   company_name: "KMTC Mathari",
+    //   icon: '/assets/kmtc.png',
+    //   iconBg: "#A05252",
+    //   date: "February 2024 - May 2024",
+    //   points: [
+    //       "Troubleshot computer hardware and software issues, ensuring minimal downtime.",
+    //       "Diagnosed and resolved campus LAN connectivity problems.",
+    //       "Assisted with the installation and configuration of software across campus workstations.",
+    //       "Set up and maintained computer workstations, including hardware assembly and configuration.",
+    //       "Installed and configured the core campus Enterprise Resource Package (ERP) system on new computers, ensuring seamless integration into existing infrastructure.",
+    //   ],
+    // },
+    // {
+    //   title: "ICT Support Assistant",
+    //   company_name: "KMTC Mathari",
+    //   icon: '/assets/kmtc.png',
+    //   iconBg: "#A05252",
+    //   date: "February 2024 - May 2024",
+    //   points: [
+    //       "Troubleshot computer hardware and software issues, ensuring minimal downtime.",
+    //       "Diagnosed and resolved campus LAN connectivity problems.",
+    //       "Assisted with the installation and configuration of software across campus workstations.",
+    //       "Set up and maintained computer workstations, including hardware assembly and configuration.",
+    //       "Installed and configured the core campus Enterprise Resource Package (ERP) system on new computers, ensuring seamless integration into existing infrastructure.",
+    //   ],
+    // },
   ];
