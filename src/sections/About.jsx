@@ -1,21 +1,19 @@
-import React from 'react'
-import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
+import React from 'react';
+import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import { experiences } from '../constants'
+import { experiences } from '../constants';
 
 const About = () => {
   return (
-    <section className='max-container mt-20'>
-      <h1 className='head-text'>
+    <section className='max-container mt-20 px-6 lg:px-12'>
+      <h1 className='head-text text-center mb-8'>
         <span className='text-gray_gradient font-semibold drop-shadow'>Overview</span>
       </h1>
-      <div className='mt-5 flex flex-col gap-3 text-white'>
-        <p>
-          I'm a skilled software developer with experience in Python and
-          JavaScript, and expertise in frameworks like React, Node.js, and
-          Django. I'm a quick learner and collaborate closely with clients to
-          create efficient, scalable, and user-friendly solutions that solve
-          real-world problems. Let's work together to bring your ideas to life!        
+      <div className='mt-5 flex flex-col gap-4 text-white max-w-4xl mx-auto'>
+        <p className='leading-relaxed text-justify'>
+          I'm a skilled software developer with experience in Python and JavaScript, and expertise in frameworks like React, Node.js, and Django. 
+          I'm a quick learner and collaborate closely with clients to create efficient, scalable, and user-friendly solutions that solve real-world problems. 
+          Let's work together to bring your ideas to life!        
         </p>
       </div>
       {/* <div className='py-10 flex flex-col'>
@@ -39,17 +37,17 @@ const About = () => {
       {/* </div> */}
 
       <div>
-        <h2 className='font-semibold text-gray_gradient mt-10'>Work Experience</h2>
-        <div className='mt-5 flex flex-col gap-3 text-white'>
-          <p>
+        <h2 className='font-semibold text-gray_gradient text-center mt-14'>Work Experience</h2>
+        <div className='mt-6 flex flex-col gap-4 text-white max-w-4xl mx-auto'>
+          <p className='leading-relaxed text-justify'>
             Throughout my career, I've collaborated with diverse companies, enhancing my skills and working alongside talented individuals. Here's a quick overview: 
           </p>
         </div>
-        <div className='mt-12 flex'>
+        <div className='mt-12'>
           <VerticalTimeline>
             {experiences.map((experience) => (
-              <VerticalTimelineElement 
-                key={experience.company_name} 
+              <VerticalTimelineElement
+                key={experience.company_name}
                 date={experience.date}
                 icon={
                   <div className='flex justify-center items-center w-full h-full'> 
@@ -60,25 +58,25 @@ const About = () => {
                     />
                   </div>
                 }
-                iconStyle={{background: experience.iconBg}}
+                iconStyle={{ background: experience.iconBg }}
                 contentStyle={{
                   borderBottom: '8px',
                   borderStyle: 'solid',
                   borderBottomColor: experience.iconBg,
-                  boxShadow: 'none'
+                  boxShadow: 'none',
                 }}
               >
                 <div>
                   <h3 className='text-black text-xl font-poppins font-semibold'>
                     {experience.title}
                   </h3>
-                  <p className='text-black-500 font-medium font-base' style={{margin:0}}>
+                  <p className='text-gray-600 font-medium' style={{ margin: 0 }}>
                     {experience.company_name}
                   </p>
                 </div>
                 <ul className='my-5 list-disc ml-5 space-y-2'>
                   {experience.points.map((point, index) => (
-                    <li key={`experience-point-${index}`} className='text-black-300 font-normal pl-1 text-sm'>
+                    <li key={`experience-point-${index}`} className='text-gray-700 font-normal pl-1 text-sm'>
                       {point}
                     </li>
                   ))}
@@ -89,7 +87,7 @@ const About = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default About
+export default About;
