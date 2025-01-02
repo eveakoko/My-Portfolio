@@ -78,18 +78,13 @@ export const navLinks = [
     imageUrl: '/assets/tailwindcss.svg'
   },
   {
-    name: 'Postman',
-    imageUrl: '/assets/vite.svg'
-  },
-  {
     name: 'SqlAlchemy',
     imageUrl: '/assets/sqlalchemy.svg'
   },
   {
-    name: 'SqlAlchemy',
+    name: 'MySQL',
     imageUrl: '/assets/MySQL.svg'
   },
-    
   ];
   
   export const myProjects = [
