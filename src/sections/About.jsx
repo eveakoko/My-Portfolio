@@ -19,6 +19,7 @@ const About = () => {
 
       {/* Skills Section */}
       <div className='mt-16 skills-section'>
+        <div className="btn-back"></div> 
         <h3 className='font-semibold text-gray_gradient text-center'>My Skills</h3>
         <div className='mt-16 flex flex-wrap gap-12 justify-center'>
           {skills.map((skill) => (
