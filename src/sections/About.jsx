@@ -18,11 +18,11 @@ const About = () => {
       </div>
 
       {/* Skills Section */}
-      <div className='mt-16'>
+      <div className='mt-16 skills-section'>
         <h3 className='font-semibold text-gray_gradient text-center'>My Skills</h3>
         <div className='mt-16 flex flex-wrap gap-12 justify-center'>
           {skills.map((skill) => (
-            <div key={skill.name} className='w-20 h-20 flex justify-center items-center'>
+            <div key={skill.name} className='skill-item'>
               <div className='rounded-xl shadow-lg bg-white p-4'>
                 <img
                   src={skill.imageUrl}
