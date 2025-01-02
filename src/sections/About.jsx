@@ -1,7 +1,7 @@
 import React from 'react';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import { experiences } from '../constants';
+import { experiences, skills } from '../constants'; 
 
 const About = () => {
   return (
@@ -16,26 +16,27 @@ const About = () => {
           Let's work together to bring your ideas to life!        
         </p>
       </div>
-      {/* <div className='py-10 flex flex-col'>
-        <h3 className='subhead-text'>My SKills</h3>
 
-        <div className='mt-16 flex flex-wrap gap-12'>
+      {/* Skills Section */}
+      <div className='mt-16'>
+        <h3 className='font-semibold text-gray_gradient text-center'>My Skills</h3>
+        <div className='mt-16 flex flex-wrap gap-12 justify-center'>
           {skills.map((skill) => (
-            <div className='block-container w-20 h-20'>
-              <div className='btn-back rounded-xl'/>
-              <div className='btn-front rounded-xl justify-center items-center'>
-                <img 
+            <div key={skill.name} className='w-20 h-20 flex justify-center items-center'>
+              <div className='rounded-xl shadow-lg bg-white p-4'>
+                <img
                   src={skill.imageUrl}
                   alt={skill.name}
-                  className='w-1/2 h-1/2 object-contain'
+                  className='w-16 h-16 object-contain'
                 />
+                <p className='text-center text-white mt-2'>{skill.name}</p>
               </div>
             </div>
           ))}
-        </div> */}
+        </div>
+      </div>
 
-      {/* </div> */}
-
+      {/* Work Experience */}
       <div>
         <h2 className='font-semibold text-gray_gradient text-center mt-14'>Work Experience</h2>
         <div className='mt-6 flex flex-col gap-4 text-white max-w-4xl mx-auto'>
