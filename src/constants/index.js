@@ -15,6 +15,82 @@ export const navLinks = [
       href: '#contact',
     },
   ];
+
+  export const skills = [
+    {
+      name: 'React',
+      imageUrl: '/assets/react.svg' 
+    },
+    {
+      name: 'Node.js',
+      imageUrl: '/assets/nodejs.svg'
+    },
+    {
+      name: 'Django',
+      imageUrl: '/assets/django.svg'
+    },
+    {
+      name: 'Git',
+      imageUrl: '/assets/git.svg' 
+    },
+    {
+      name: 'Github',
+      imageUrl: '/assets/gitub.svg'
+    },
+    {
+      name: 'Flask',
+      imageUrl: '/assets/flask.svg'
+    },
+    {
+      name: 'Python',
+      imageUrl: '/assets/python.svg'
+    },
+  {
+    name: 'Express',
+    imageUrl: '/assets/express.svg'
+  },
+  {
+    name: 'Css',
+    imageUrl: '/assets/css.svg'
+  },
+  {
+    name: 'Postman',
+    imageUrl: '/assets/postman.svg'
+  },
+  {
+    name: 'JS',
+    imageUrl: '/assets/javascript.svg'
+  },
+  {
+    name: 'MongoDB',
+    imageUrl: '/assets/mongodb.svg'
+  },
+  {
+    name: 'Next.js',
+    imageUrl: '/assets/nextjs.svg'
+  },
+  {
+    name: 'Vite',
+    imageUrl: '/assets/vite.svg'
+  },
+  {
+    name: 'Tailwind',
+    imageUrl: '/assets/tailwindcss.svg'
+  },
+  {
+    name: 'Postman',
+    imageUrl: '/assets/vite.svg'
+  },
+  {
+    name: 'SqlAlchemy',
+    imageUrl: '/assets/sqlalchemy.svg'
+  },
+  {
+    name: 'SqlAlchemy',
+    imageUrl: '/assets/MySQL.svg'
+  },
+    
+  ];
   
   export const myProjects = [
     {
