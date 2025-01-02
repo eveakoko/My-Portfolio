@@ -95,7 +95,7 @@ export const navLinks = [
   export const projects = [
     {
         iconUrl: '/assets/Screenshot.png',
-        theme: 'btn-back-green',
+        // theme: 'btn-back-green',
         name: 'InterviewEve',
         description: 'Developed InterviewEve, a web-based tool built with Python Flask and Jinja2 to streamline interview preparation. The platform offers expertly crafted practice questions, interview tips, and a user-friendly interface for an engaging and successful interview preparation experience.',
         link: 'https://intervieweve.onrender.com/',
