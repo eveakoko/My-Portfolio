@@ -5,7 +5,7 @@ import { experiences } from '../constants';
 
 const About = () => {
   return (
-    <section className='max-container mt-20 px-6 lg:px-12'>
+    <section id="about" className='max-container mt-20 px-6 lg:px-12'>
       <h1 className='head-text text-center mb-8'>
         <span className='text-gray_gradient font-semibold drop-shadow'>Overview</span>
       </h1>
