@@ -8,7 +8,7 @@ const Projects = () => {
         My <span className='text-gray_gradient font-semibold drop-shadow'>Projects</span>
       </h1>
 
-      <div className='mt-5 flex flex-col gap-4 text-slate-600 max-w-4xl mx-auto'>
+      <div className='mt-5 flex flex-col gap-4 text-slate-300 max-w-4xl mx-auto'>
         <p className='text-justify'>
           Over the years, I've worked on a range of projects that have shaped my skills and showcase my growth as a developer. Many of these are open-source, so if something catches your eye, dive in! I'm confident you'll find something that resonates with you, and I welcome your contributions and feedback.
         </p>

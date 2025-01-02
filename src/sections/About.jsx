@@ -9,7 +9,7 @@ const About = () => {
       <h1 className='head-text text-center mb-8'>
         <span className='text-gray_gradient font-semibold drop-shadow'>Overview</span>
       </h1>
-      <div className='mt-5 flex flex-col gap-4 text-white max-w-4xl mx-auto'>
+      <div className='mt-5 flex flex-col gap-4 text-slate-300 max-w-4xl mx-auto'>
         <p className='leading-relaxed text-justify'>
           I'm a skilled software developer with experience in Python and JavaScript, and expertise in frameworks like React, Node.js, and Django. 
           I'm a quick learner and collaborate closely with clients to create efficient, scalable, and user-friendly solutions that solve real-world problems. 
@@ -40,7 +40,7 @@ const About = () => {
       {/* Work Experience */}
       <div>
         <h2 className='font-semibold text-gray_gradient text-center mt-14'>Work Experience</h2>
-        <div className='mt-6 flex flex-col gap-4 text-white max-w-4xl mx-auto'>
+        <div className='mt-6 flex flex-col gap-4 text-slate-300 max-w-4xl mx-auto'>
           <p className='leading-relaxed text-justify'>
             Throughout my career, I've collaborated with diverse companies, enhancing my skills and working alongside talented individuals. Here's a quick overview: 
           </p>
