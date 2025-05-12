@@ -101,7 +101,7 @@ export const navLinks = [
         link: 'https://intervieweve.onrender.com/',
     },
       {
-        iconUrl: '/assets/Screenshot.png',
+        iconUrl: '/assets/Screenshot2.png',
         name: 'GroupChat',
         description: 'Developed GroupChat, a real-time group chat app with dynamic usernames, avatars, live messaging, system notifications, and a responsive interface.',
         link: 'https://group-chat-wqgk.onrender.com/',
