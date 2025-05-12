@@ -19,30 +19,34 @@ const Projects = () => {
         <h3 className='text-center font-semibold text-gray_gradient mb-6'>Project Timeline</h3>
         <div className='flex flex-wrap gap-8 justify-center'>
           {projects.map((project) => (
-            <div key={project.name} className='w-full sm:w-96 lg:w-80'>
-              <div className='relative group'>
+            <div key={project.name} className='w-full sm:w-80 lg:w-72'>
+              <div className='relative group h-[400px]'>
                 {/* Project Card */}
-                <div className='transition-all duration-300 bg-white shadow-lg rounded-xl p-6 hover:scale-105'>
+                <div className='transition-all duration-300 bg-white shadow-lg rounded-xl p-6 hover:scale-105 h-full flex flex-col justify-between'>
                   <img 
                     src={project.iconUrl} 
                     alt={project.name} 
-                    className='w-30 h-30 object-contain mx-auto'
+                    className='w-24 h-24 object-contain mx-auto'
                   />
-                  <h4 className='mt-4 text-xl font-semibold text-center'>{project.name}</h4>
-                  <p className='mt-2 text-center text-slate-600'>{project.description}</p>
+                  <div className='flex-grow mt-4'>
+                    <h4 className='text-xl font-semibold text-center'>{project.name}</h4>
+                    <p className='mt-2 text-center text-slate-600 text-sm line-clamp-4'>
+                      {project.description}
+                    </p>
+                  </div>
                 </div>
 
                 {/* Hover Effect with Project Details */}
-                <div className='absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-all duration-300 rounded-xl p-6'>
-                  <div className='flex flex-col items-center justify-center h-full text-white'>
+                <div className='absolute top-0 left-0 w-full h-full bg-black bg-opacity-70 opacity-0 group-hover:opacity-100 transition-all duration-300 rounded-xl p-6 flex items-center justify-center text-white text-center'>
+                  <div>
                     <h4 className='text-xl font-semibold'>{project.name}</h4>
-                    <p className='mt-2 text-center'>{project.detailedDescription}</p>
-                    <div className='mt-5 flex gap-4 justify-center'>
+                    <p className='mt-2 text-sm overflow-y-auto max-h-32 px-1'>{project.detailedDescription || project.description}</p>
+                    <div className='mt-4 flex gap-4 justify-center'>
                       <a 
                         href={project.link} 
                         target='_blank' 
                         rel='noopener noreferrer' 
-                        className='text-blue-400'
+                        className='text-blue-400 underline'
                       >
                         View Live
                       </a>
@@ -51,7 +55,7 @@ const Projects = () => {
                           href={project.github} 
                           target='_blank' 
                           rel='noopener noreferrer' 
-                          className='text-gray-300'
+                          className='text-gray-300 underline'
                         >
                           GitHub
                         </a>
