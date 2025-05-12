@@ -100,6 +100,12 @@ export const navLinks = [
         description: 'Developed InterviewEve, a web-based tool built with Python Flask and Jinja2 to streamline interview preparation. The platform offers expertly crafted practice questions, interview tips, and a user-friendly interface for an engaging and successful interview preparation experience.',
         link: 'https://intervieweve.onrender.com/',
     },
+      {
+        iconUrl: '/assets/Screenshot.png',
+        name: 'GroupChat',
+        description: 'Developed GroupChat, a real-time group chat app with dynamic usernames, avatars, live messaging, system notifications, and a responsive interface.',
+        link: 'https://group-chat-wqgk.onrender.com/',
+    },
   ];
   
   export const calculateSizes = (isSmall, isMobile, isTablet) => {
