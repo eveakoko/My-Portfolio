@@ -39,8 +39,8 @@ const Projects = () => {
                 {/* Hover Effect with Project Details */}
                 <div className='absolute top-0 left-0 w-full h-full bg-black bg-opacity-70 opacity-0 group-hover:opacity-100 transition-all duration-300 rounded-xl p-6 flex items-center justify-center text-white text-center'>
                   <div>
-                    <h4 className='text-xl font-semibold'>{project.name}</h4>
-                    <p className='mt-2 text-sm overflow-y-auto max-h-32 px-1'>{project.detailedDescription || project.description}</p>
+                    {/*<h4 className='text-xl font-semibold'>{project.name}</h4>
+                    <p className='mt-2 text-sm overflow-y-auto max-h-32 px-1'>{project.detailedDescription || project.description}</p>*/}
                     <div className='mt-4 flex gap-4 justify-center'>
                       <a 
                         href={project.link} 
